@@ -1,0 +1,27 @@
+font-family: 'Overpass', sans-serif;
+.photocaption {
+    background-color:#759AAB; color:#6B2737; font-size: 25px;
+}
+#largertext {
+    font-size: 20px;
+}
+#largertext::first-letter {
+    font-size: 30px;
+}
+* {
+    background-color:#283D3B;
+
+}
+h1, h2, h3, h4, h5 {
+    color:#FFE66D;
+
+}
+a:link {
+    color:#E86A92;
+}
+a:visited {
+    color:#6B2737;
+}
+p, ul, ol {
+    color:#759AAB;
+}
