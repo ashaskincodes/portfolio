@@ -4,6 +4,12 @@
     background-color:#363635; margin: 0; padding: 0;
 }
 
+/* html - sets the base font size */
+
+html {
+    font-size: 20px;
+}
+
 /* body - sets the fonts */
 
 body {
@@ -14,19 +20,19 @@ body {
 
 
 .photocaption {
-    color:#3DD6D0; font-size: 25px;
+    color:#3DD6D0; font-size: 1.5rem;
 }
 
-/* largertext id - increases size for important text. think this should be a relative font size and probably a class, not an id */
+/* largertext id - increases size for important text. think this should probably be a class, not an id */
 
 #largertext {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
-/*largertext id - increases the size of the first letter - again, this should be a relative font size */
+/*largertext id - increases the size of the first letter */
 
 #largertext::first-letter {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 /* h1-h5 - sets the color, uppercase and font of ALL headings - this might not be efficient */
@@ -38,7 +44,7 @@ h1, h2, h3, h4, h5 {
 /* h1 - increases the font size of h1. Should probably be a relative font size */
 
 h1 {
-    font-size: 150px;
+    font-size: 8rem;
 }
 
 /* a:link - sets the colour of unvisited links */
