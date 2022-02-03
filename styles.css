@@ -16,6 +16,13 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+/* ::selection - sets the color and background of selected text */
+
+::selection {
+    color: #363635;
+    background:#B0FE76;
+}
+
 /* photocaption class - sets color and font size for photo captions */
 
 
