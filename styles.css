@@ -1,19 +1,20 @@
 /* universal - sets the background color and removes margins/padding */
 
 * {
-    background-color:#363635; margin: 0; padding: 0;
+    background-color:#020402;
+    margin: 0; padding: 0;
 }
 
 /* html - sets the base font size */
 
 html {
-    font-size: 20px;
+    font-size: 10px;
 }
 
 /* body - sets the fonts */
 
 body {
-    font-family: 'Jost', sans-serif;
+    Font-Family: 'Alegreya', Serif;
 }
 
 /* ::selection - sets the color and background of selected text */
@@ -23,63 +24,93 @@ body {
     background:#B0FE76;
 }
 
-/* photocaption class - sets color and font size for photo captions */
-
-
-.photocaption {
-    color:#3DD6D0; font-size: 1.5rem;
-}
-
-/* largertext id - increases size for important text. think this should probably be a class, not an id */
-
-#largertext {
-    font-size: 2rem;
-}
-
-/*largertext id - increases the size of the first letter */
-
-#largertext::first-letter {
-    font-size: 3rem;
-}
-
 /* h1-h5 - sets the color, uppercase and font of ALL headings - this might not be efficient */
 
 h1, h2, h3, h4, h5 {
-    color:#B0FE76; text-transform: uppercase; font-family: 'Alata', sans-serif;
+    Font-Family: 'Oswald', Sans-Serif;
 }
-
-/* h1 - increases the font size of h1. Should probably be a relative font size */
 
 h1 {
     font-size: 8rem;
+    text-transform: uppercase;
+    padding-top: 5%;
+    color:#44CF6C;
 }
 
-/* a:link - sets the colour of unvisited links */
-
-a:link {
-    color:#E56399
+h2 {
+    color:#246A73; Font-Family: 'Oswald', Sans-Serif;
+    font-size: 5rem;
 }
 
-/* a:visited - sets the colour of visited links */
-
-a:visited {
-    color:#DBD2E0
+h3, h4 {
+    color:#246A73; Font-Family: 'Oswald', Sans-Serif;
+    font-size: 5rem;
+    text-align: center;
 }
 
-/* a:any-link - removes the underlining of any link (visited or unvisited) */
+.aboutmecontainer {
+    margin: auto;
+    width: 80%;
+}
+
+.aboutme {
+    text-align: center;
+}
+
+.photo1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    font-size: 2.5rem;
+    padding: 10%;
+}
+
+.photo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    font-size: 2.5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding bottom: 10%;
+}
 
 a:any-link {
     text-decoration: none;
+    font-size: 2rem;
+    color: #BF4E30;
 }
 
 /* - p, ul, ol - sets the font color of paragraphs, unordered lists and ordered lists - may not be efficient */
 
 p, ul, ol {
-    color:#DBD2E0;
+    color:#F3DFC1;
 }
 
 /* footer - sets the text color for the footer */
 
 footer {
     color: #3DD6D0;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.links {
+    text-align: center;
+}
+.lists {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    max-width: 30%;
 }
