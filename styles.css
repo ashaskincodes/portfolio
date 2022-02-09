@@ -57,28 +57,6 @@ h3, h4 {
     text-align: center;
 }
 
-.photo1 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    text-align: right;
-    font-size: 2.5rem;
-    padding: 10%;
-}
-
-.photo2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    font-size: 2.5rem;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding bottom: 10%;
-}
-
 a:any-link {
     text-decoration: none;
     font-size: 2rem;
@@ -95,6 +73,8 @@ p, ul, ol {
 
 footer {
     color: #3DD6D0;
+    margin: auto;
+    text-align: center;
 }
 .header {
     display: flex;
@@ -105,12 +85,115 @@ footer {
 .links {
     text-align: center;
 }
-.lists {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
+
+.gopuckyerself {
+    position: relative;
+    color:#F3DFC1;
 }
-.image {
-    max-width: 30%;
+
+.kickyerballs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    color:#F3DFC1;
+}
+
+.gopuckyerselfarcade {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    color:#F3DFC1;
+}
+
+.imagetext1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.imagetext2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+.imagetext3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+}
+
+#gopuckyerselflargertext {
+    font-size: 7rem;
+    text-transform: uppercase;
+    Font-Family: 'Oswald', Sans-Serif;
+    text-align: center;
+    background-color: transparent;
+    font-weight: bold;
+    text-shadow: 3px 3px #020402;
+}
+
+#kickyerballslargertext{
+    font-size: 7rem;
+    text-transform: uppercase;
+    Font-Family: 'Oswald', Sans-Serif;
+    text-align: center;
+    background-color: transparent;
+    font-weight: bold;
+    text-shadow: 5px 5px #020402;
+}
+
+#gopuckyerselfarcadelargertext {
+    font-size: 5rem;
+    text-transform: uppercase;
+    Font-Family: 'Oswald', Sans-Serif;
+    text-align: center;
+    background-color: transparent;
+    font-weight: bold;
+    text-shadow: 3px 3px #020402;
+}
+
+#gopuckyerselfsmallertext {
+    font-size: 3rem;
+    Font-Family: 'Oswald', Sans-Serif;
+    text-align: center;
+    background-color: transparent;
+    text-shadow: 2px 2px #020402;
+}
+
+#kickyerballssmallertext {
+    font-size: 3rem;
+    Font-Family: 'Oswald', Sans-Serif;
+    text-align: center;
+    background-color: transparent;
+    text-shadow: 5px 5px #020402;
+}
+
+#gopuckyerselfarcadesmallertext {
+    font-size: 3rem;
+    Font-Family: 'Oswald', Sans-Serif;
+    text-align: center;
+    background-color: transparent;
+    text-shadow: 2px 2px #020402;
+}
+
+.projectimage {
+    width: 70%;
+    margin: 15%;
+}
+
+.musicprojects {
+    text-align: center;
+}
+
+.bandlogo {
+    width: 30%;
 }
