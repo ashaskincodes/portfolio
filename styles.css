@@ -14,7 +14,7 @@ html {
 /* body - sets the fonts */
 
 body {
-    Font-Family: 'Alegreya', Serif;
+    font-family: 'Lato', sans-serif;
 }
 
 /* ::selection - sets the color and background of selected text */
