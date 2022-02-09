@@ -21,8 +21,8 @@ body {
 /* ::selection - sets the color and background of selected text */
 
 ::selection {
-    color: #363635;
-    background:#B0FE76;
+    color: #242325;
+    background:#E2F89C;
 }
 
 /* h1-h5 - sets the color, uppercase and font of ALL headings - this might not be efficient */
@@ -35,7 +35,7 @@ h1 {
     font-size: 8rem;
     text-transform: uppercase;
     margin-top: 5%;
-    color:#FFA3AF;
+    color: #FFA3AF;
 }
 
 h3 {
@@ -220,4 +220,229 @@ footer {
     color: #FFA3AF;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    /* universal - sets the background color and removes margins/padding */
+
+    * {
+        background-color:#242325;
+        margin: 0; padding: 0;
+    }
+
+    /* html - sets the base font size */
+
+    html {
+        font-size: 20px;
+    }
+
+    /* body - sets the fonts */
+
+    body {
+        font-family: 'Lato', sans-serif;
+        color:#E2F89C;
+    }
+
+    /* ::selection - sets the color and background of selected text */
+
+    ::selection {
+        color: #242325;
+    background:#E2F89C;
+    }
+
+    /* h1-h5 - sets the color, uppercase and font of ALL headings - this might not be efficient */
+
+    h1, h2, h3, h4, h5 {
+        Font-Family: 'Oswald', Sans-Serif;
+    }
+
+    h1 {
+        font-size: 8rem;
+        text-transform: uppercase;
+        color: #FFA3AF;
+    }
+
+    h3 {
+        margin-bottom: 10%;
+    }
+
+    h2, h3, h4 {
+        color:#69A2B0; Font-Family: 'Oswald', Sans-Serif;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    .aboutmecontainer {
+        margin: auto;
+        width: 80%;
+        margin-bottom: 20%;
+    }
+
+    .aboutme {
+        text-align: center;
+        font-weight: 300;
+    }
+
+    a:any-link {
+        text-decoration: none;
+        Font-Family: 'Oswald', Sans-Serif;
+        color: antiquewhite;
+    }
+
+    /* - p, ul, ol - sets the font color of paragraphs, unordered lists and ordered lists - may not be efficient */
+
+
+    /* footer - sets the text color for the footer */
+
+    footer {
+        color: #E2F89C;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20%;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .gopuckyerself {
+    position: relative;
+    }
+
+    .kickyerballs {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+    }
+
+    .gopuckyerselfarcade {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+
+    .imagetext1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+    }
+
+    .imagetext2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+    }
+
+    .imagetext3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+    }
+
+    #gopuckyerselflargertext {
+        font-size: 4rem;
+        text-transform: uppercase;
+        Font-Family: 'Oswald', Sans-Serif;
+        text-align: center;
+        background-color: transparent;
+        font-weight: bold;
+        text-shadow: 3px 3px #020402;
+        color: antiquewhite;
+    }
+
+    #kickyerballslargertext{
+        font-size: 4rem;
+        text-transform: uppercase;
+        Font-Family: 'Oswald', Sans-Serif;
+        text-align: center;
+        background-color: transparent;
+        font-weight: bold;
+        text-shadow: 3px 3px #020402;
+        color: antiquewhite;
+    }
+
+    #gopuckyerselfarcadelargertext {
+        font-size: 3rem;
+        text-transform: uppercase;
+        Font-Family: 'Oswald', Sans-Serif;
+        text-align: center;
+        background-color: transparent;
+        font-weight: bold;
+        text-shadow: 3px 3px #020402;
+        color: antiquewhite;
+    }
+
+    #gopuckyerselfsmallertext {
+        font-size: 1.3rem;
+        Font-Family: 'Oswald', Sans-Serif;
+        text-align: center;
+        background-color: transparent;
+        text-shadow: 2px 2px #020402;
+        color: antiquewhite;
+    }
+
+    #kickyerballssmallertext {
+        font-size: 1.6rem;
+        Font-Family: 'Oswald', Sans-Serif;
+        text-align: center;
+        background-color: transparent;
+        text-shadow: 2px 2px #020402;
+        color: antiquewhite;
+    }
+
+    #gopuckyerselfarcadesmallertext {
+        font-size: 2rem;
+        Font-Family: 'Oswald', Sans-Serif;
+        text-align: center;
+        background-color: transparent;
+        text-shadow: 2px 2px #020402;
+        color: antiquewhite;
+    }
+
+    .projectimage {
+        width: 70%;
+    }
+
+    .musicprojects {
+        text-align: center;
+        margin-bottom: 20%;
+        margin-top: 20%;
+    }
+
+    .bandlogo {
+        width: 32%;
+    }
+
+    .gopuckyerself, .kickyerballs, .gopuckyerselfarcade {
+        margin: 5%;
+        text-align: center;
+    }
+
+    .links {
+        text-align: center;
+        margin: 20%;
+        font-size: 4rem;
+    }
+
+    .links a:any-link{
+        color: #FFA3AF;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
 }
