@@ -33,13 +33,17 @@ h1, h2, h3, h4, h5 {
 h1 {
     font-size: 8rem;
     text-transform: uppercase;
-    padding-top: 5%;
+    margin-top: 5%;
     color:#44CF6C;
 }
 
 h2 {
     color:#246A73; Font-Family: 'Oswald', Sans-Serif;
     font-size: 5rem;
+}
+
+h3 {
+    margin-bottom: 10%;
 }
 
 h3, h4 {
@@ -51,6 +55,7 @@ h3, h4 {
 .aboutmecontainer {
     margin: auto;
     width: 80%;
+    margin-bottom: 10%;
 }
 
 .aboutme {
@@ -61,6 +66,7 @@ a:any-link {
     text-decoration: none;
     font-size: 2rem;
     color: #BF4E30;
+    Font-Family: 'Oswald', Sans-Serif;
 }
 
 /* - p, ul, ol - sets the font color of paragraphs, unordered lists and ordered lists - may not be efficient */
@@ -81,9 +87,11 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 10%;
 }
 .links {
     text-align: center;
+    margin: 15%;
 }
 
 .gopuckyerself {
@@ -148,11 +156,11 @@ footer {
     text-align: center;
     background-color: transparent;
     font-weight: bold;
-    text-shadow: 5px 5px #020402;
+    text-shadow: 3px 3px #020402;
 }
 
 #gopuckyerselfarcadelargertext {
-    font-size: 5rem;
+    font-size: 6rem;
     text-transform: uppercase;
     Font-Family: 'Oswald', Sans-Serif;
     text-align: center;
@@ -174,7 +182,7 @@ footer {
     Font-Family: 'Oswald', Sans-Serif;
     text-align: center;
     background-color: transparent;
-    text-shadow: 5px 5px #020402;
+    text-shadow: 2px 2px #020402;
 }
 
 #gopuckyerselfarcadesmallertext {
@@ -187,7 +195,6 @@ footer {
 
 .projectimage {
     width: 70%;
-    margin: 15%;
 }
 
 .musicprojects {
@@ -195,5 +202,10 @@ footer {
 }
 
 .bandlogo {
-    width: 30%;
+    width: 32%;
+}
+
+.gopuckyerself, .kickyerballs, .gopuckyerselfarcade {
+    margin: 5%;
+    text-align: center;
 }
