@@ -18,6 +18,8 @@ body {
     color:#E2F89C;
 }
 
+/*this section applies only to mobile viewers, and removes the 'about me' section from the header (used in the desktop version) */
+
 .headerchild3, .headerchild4, .headerchild5 {
     display: none;
 }
@@ -29,7 +31,7 @@ body {
     background:#E2F89C;
 }
 
-/* h1-h5 - sets the color, uppercase and font of ALL headings - this might not be efficient */
+/* heading section - this sets various visual aspects of the headings */
 
 h1, h2, h3, h4, h5 {
     Font-Family: 'Oswald', Sans-Serif;
@@ -47,14 +49,22 @@ h3 {
 }
 
 h2, h3, h4 {
-    color:#69A2B0; Font-Family: 'Oswald', Sans-Serif;
+    color:#69A2B0;
     font-size: 2rem;
     text-align: center;
 }
 
-h2 {
-    font-size: 2rem;
+/* header - sets the header as a flex container and specifies visual aspects */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
 }
+
+/* aboutme section sets visual aspects of the about me section */
 
 .aboutmecontainer {
     margin: auto;
@@ -67,29 +77,25 @@ h2 {
     font-weight: 300;
 }
 
-a:any-link {
-    text-decoration: none;
-    Font-Family: 'Oswald', Sans-Serif;
-    color: antiquewhite;
-}
+/* musicprojects sets the alignment and spacing of the band logo images */
 
-/* - p, ul, ol - sets the font color of paragraphs, unordered lists and ordered lists - may not be efficient */
-
-
-/* footer - sets the text color for the footer */
-
-footer {
-    color: #E2F89C;
-    margin: auto;
+.musicprojects {
     text-align: center;
     margin-bottom: 20%;
+    margin-top: 20%;
 }
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10%;
+
+/* bandlogo sets the size of the logo images */
+
+.bandlogo {
+    width: 32%;
+}
+
+/* this long section sets the size and position of the game screenshots
+and centers the txt on them - this could be neater */
+
+.projectimage {
+    width: 90%;
 }
 
 .gopuckyerself {
@@ -111,7 +117,7 @@ footer {
     margin-bottom: 20%;
 }
 
-.imagetext1 {
+.imagetext1, .imagetext2, .imagetext3 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -119,94 +125,43 @@ footer {
     background-color: transparent;
 }
 
-.imagetext2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* This section controls the visual aspect of the text on
+the game screenshots */
+
+#gopuckyerselflargertext, #kickyerballslargertext, #gopuckyerselfarcadelargertext, #gopuckyerselfsmallertext, #kickyerballssmallertext, #gopuckyerselfarcadesmallertext {
+    Font-Family: 'Oswald', Sans-Serif;
+    text-align: center;
     background-color: transparent;
+    text-shadow: 2px 2px #020402;
 }
 
-.imagetext3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
+#gopuckyerselflargertext, #kickyerballslargertext, #gopuckyerselfarcadelargertext {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 #gopuckyerselflargertext {
     font-size: 8vw;
-    text-transform: uppercase;
-    Font-Family: 'Oswald', Sans-Serif;
-    text-align: center;
-    background-color: transparent;
-    font-weight: bold;
-    text-shadow: 3px 3px #020402;
-    color: antiquewhite;
 }
 
 #kickyerballslargertext{
     font-size: 8vw;
-    text-transform: uppercase;
-    Font-Family: 'Oswald', Sans-Serif;
-    text-align: center;
-    background-color: transparent;
-    font-weight: bold;
-    text-shadow: 3px 3px #020402;
-    color: antiquewhite;
 }
 
 #gopuckyerselfarcadelargertext {
     font-size: 6vw;
-    text-transform: uppercase;
-    Font-Family: 'Oswald', Sans-Serif;
-    text-align: center;
-    background-color: transparent;
-    font-weight: bold;
-    text-shadow: 3px 3px #020402;
-    color: antiquewhite;
 }
 
 #gopuckyerselfsmallertext {
     font-size: 4vw;
-    Font-Family: 'Oswald', Sans-Serif;
-    text-align: center;
-    background-color: transparent;
-    text-shadow: 2px 2px #020402;
-    color: antiquewhite;
 }
 
 #kickyerballssmallertext {
     font-size: 4vw;
-    Font-Family: 'Oswald', Sans-Serif;
-    text-align: center;
-    background-color: transparent;
-    text-shadow: 2px 2px #020402;
-    color: antiquewhite;
 }
 
 #gopuckyerselfarcadesmallertext {
     font-size: 4vw;
-    Font-Family: 'Oswald', Sans-Serif;
-    text-align: center;
-    background-color: transparent;
-    text-shadow: 2px 2px #020402;
-    color: antiquewhite;
-}
-
-.projectimage {
-    width: 90%;
-}
-
-.musicprojects {
-    text-align: center;
-    margin-bottom: 20%;
-    margin-top: 20%;
-}
-
-.bandlogo {
-    width: 32%;
 }
 
 .gopuckyerself, .kickyerballs, .gopuckyerselfarcade {
@@ -226,6 +181,25 @@ footer {
     font-weight: bold;
 }
 
+/* link section removes the underline of links and sets the font color */
+
+a:any-link {
+    text-decoration: none;
+    Font-Family: 'Oswald', Sans-Serif;
+    color: antiquewhite;
+}
+
+/* footer - sets the text color for the footer */
+
+footer {
+    color: #E2F89C;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+/* Following section only applies to screens wider than 768px */
+
 @media only screen and (min-width: 768px) {
     /* universal - sets the background color and removes margins/padding */
 
@@ -234,7 +208,7 @@ footer {
         margin: 0; padding: 0;
     }
 
-    /* html - sets the base font size */
+    /* html - sets the base font size - this is larger than the mobile version */
 
     html {
     font-size: 25px;
@@ -267,31 +241,17 @@ footer {
     }
 
     h2, h3, h4 {
-        color:#69A2B0; Font-Family: 'Oswald', Sans-Serif;
+        color:#69A2B0;
         font-size: 6vw;
     }
+
+    /* p - sets font size for p, which is just the about me copy */
 
     p {
         font-size: 1.2vw;
     }
 
-    a:any-link {
-        text-decoration: none;
-        Font-Family: 'Oswald', Sans-Serif;
-        color: antiquewhite;
-    }
-
-    /* - p, ul, ol - sets the font color of paragraphs, unordered lists and ordered lists - may not be efficient */
-
-
-    /* footer - sets the text color for the footer */
-
-    footer {
-        color: #E2F89C;
-        margin: auto;
-        text-align: center;
-        margin-bottom: 20%;
-    }
+    /* header section sets the grids for the header */
 
     .header {display: grid;
         grid-template-columns: auto auto auto auto;
@@ -331,9 +291,30 @@ footer {
         text-align: left;
     }
 
+    /* This section hides the separate about me section which is used for mobile
+    - the about me section is part of the header grid on the desktop version */
+
     .aboutmecontainer, .aboutme {
         display: none;
     }
+
+    /* This section sets the display properties for the band logo images */
+
+    .musictitle {
+        margin-top: 10%;
+    }
+
+    .musicprojects {
+        text-align: center;
+        margin-top: 0px;
+        overflow: hidden;
+    }
+
+    .bandlogo {
+        width: 28%;
+    }  
+
+    /* This section sets display properties for the game screenshots and links */
 
     .gameprojectsheader {
         margin-bottom: 5%;
@@ -343,6 +324,8 @@ footer {
         display: flex;
         flex-direction: row;
     }
+
+    /* This section sets the animations for the images */
 
     .gopuckyerself, .kickyerballs, .gopuckyerselfarcade {
         margin: 1px;
@@ -359,7 +342,9 @@ footer {
         transform: scale(4);
     }
 
-    .imagetext1 {
+    /* this section sets the text properties for the images */
+
+    .imagetext1, .imagetext2, .imagetext3 {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -367,95 +352,44 @@ footer {
         background-color: transparent;
     }
 
-    .imagetext2 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: transparent;
+    #gopuckyerselflargertext, #gopuckyerselfsmallertext, #kickyerballslargertext, #kickyerballssmallertext, #gopuckyerselfarcadelargertext, #gopuckyerselfarcadesmallertext {
+        Font-Family: 'Oswald', Sans-Serif;
+        text-align: center;
+        background-color: transparent;  
+        text-shadow: 3px 3px #020402;
+        color: antiquewhite; 
     }
 
-    .imagetext3 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: transparent;
+    #gopuckyerselflargertext, #kickyerballslargertext, #gopuckyerselfarcadelargertext {
+        text-transform: uppercase;
+        font-weight: bold;
     }
 
     #gopuckyerselflargertext {
         font-size: 3vw;
-        text-transform: uppercase;
-        Font-Family: 'Oswald', Sans-Serif;
-        text-align: center;
-        background-color: transparent;
-        font-weight: bold;
-        text-shadow: 3px 3px #020402;
-        color: antiquewhite;
-    }
-
-    #gopuckyerselfsmallertext {
-        font-size: 1.4vw;
-        Font-Family: 'Oswald', Sans-Serif;
-        text-align: center;
-        background-color: transparent;
-        text-shadow: 2px 2px #020402;
-        color: antiquewhite;
     }
 
     #kickyerballslargertext{
         font-size: 3vw;
-        text-transform: uppercase;
-        Font-Family: 'Oswald', Sans-Serif;
-        text-align: center;
-        background-color: transparent;
-        font-weight: bold;
-        text-shadow: 3px 3px #020402;
-        color: antiquewhite;
-    }
-
-    #kickyerballssmallertext {
-        font-size: 1.4vw;
-        Font-Family: 'Oswald', Sans-Serif;
-        text-align: center;
-        background-color: transparent;
-        text-shadow: 2px 2px #020402;
-        color: antiquewhite;
     }
 
     #gopuckyerselfarcadelargertext {
         font-size: 2.3vw;
-        text-transform: uppercase;
-        Font-Family: 'Oswald', Sans-Serif;
-        text-align: center;
-        background-color: transparent;
-        font-weight: bold;
-        text-shadow: 3px 3px #020402;
-        color: antiquewhite;
+    }
+
+    #gopuckyerselfsmallertext {
+        font-size: 1.4vw;
+    }
+
+    #kickyerballssmallertext {
+        font-size: 1.4vw;
     }
 
     #gopuckyerselfarcadesmallertext {
         font-size: 1.4vw;
-        Font-Family: 'Oswald', Sans-Serif;
-        text-align: center;
-        background-color: transparent;
-        text-shadow: 2px 2px #020402;
-        color: antiquewhite;
-    }
+    }  
 
-    .musictitle {
-        margin-top: 10%;
-    }
-
-    .musicprojects {
-        text-align: center;
-        margin-top: 0px;
-        overflow: hidden;
-    }
-
-    .bandlogo {
-        width: 28%;
-    }    
+    /* this section handles the appearance of links */
 
    .links {
         text-align: center;
@@ -466,5 +400,19 @@ footer {
         color: #FFA3AF;
         text-transform: uppercase;
         font-weight: bold;
+    }
+
+    a:any-link {
+        text-decoration: none;
+        Font-Family: 'Oswald', Sans-Serif;
+    }
+
+    /* footer - sets the text color for the footer */
+
+    footer {
+        color: #E2F89C;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 5%;
     }
 }
