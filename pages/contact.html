@@ -9,21 +9,28 @@
     </head>
     <body>
         <h1>Contact Ash Askin</h1>
-        <div class="form"></div>
-            <p>Feel free to get in touch using the form below!</p>
-            <input type="text" name="Your name" class="texts"/>Your name
-            <br />
-            <input type="email" name "Your email address" />Your email address
-            <br />
-            <p>Reason for contacting</p>
-            <input type="radio" name="contactreason" value="Work Commission" checked="checked" /> Work Commission
-            <br />
-            <input type="radio" name="contactreason" value="General Support" /> General Support
-            <br />
-            <input type="radio" name="contactreason" value="Just to say hi!" /> Just to say hi!
-            <br />
-            <br />
-            <textarea name="comments" placeholder="Any additional comments?"></textarea>
-        </div>
+        <form>
+            <ul class="flex-outer">
+              <li>
+                <label for="first-name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name here">
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email here">
+              </li>
+              <li>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone here">
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+              </li>
+              <li>
+                <button type="submit">Submit</button>
+              </li>
+            </ul>
+          </form>
     </body>
 </html>
