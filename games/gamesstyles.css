@@ -1,0 +1,146 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of reset */
+
+:root {
+    --background: #2F4858;
+	--maintext: #EAFFDA;
+	--windowbutton: #2F4858;
+	--windowbox: #F6AE2D;
+	--windowbackground: #2F4858;
+	--boxshadow: #D90368;
+}
+
+body {
+	width: 100vw;
+	overflow-x: hidden;
+    overflow-y: hidden;
+	background-color: var(--background);
+}
+
+.holder {
+    position: absolute;
+    top: 20%;
+    width: 100vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	margin: auto;
+}
+
+#background {
+    width: 100vw;
+    position: absolute;
+}
+
+.slideshow-container {
+    width: 1100px;
+    position: relative;
+    margin: auto;
+    top: 20%;
+    left: 35%;
+}
+
+.Containers {
+    display: none;
+}
+
+.Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.Back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.Info {
+    color: #e3e3e3;
+    font-size: 4vw;
+    font-family: 'Tsukimi Rounded', sans-serif;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 100%;
+    text-align: center;
+}
+
+.enable, .dots:hover {
+    background-color: #717161;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}
